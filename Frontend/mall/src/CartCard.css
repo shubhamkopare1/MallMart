@@ -1,0 +1,63 @@
+/* General card styling */
+.cart-card {
+    background-color: #fff;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .cart-card:hover {
+    transform: translateY(-5px); /* Hover effect for card */
+  }
+  
+  .cart-card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .cart-card-content {
+    padding: 15px;
+  }
+  
+  .cart-card-title {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .cart-card-description {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+  }
+  
+  .cart-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cart-card-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff6f00; /* Swiggy-like orange price color */
+  }
+  
+  .cart-card-btn {
+    padding: 10px 15px;
+    background-color: #ff6f00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cart-card-btn:hover {
+    background-color: #ff4500; /* Darker orange on hover */
+  }
+  

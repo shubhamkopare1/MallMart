@@ -1,0 +1,91 @@
+/* General styling for the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    border-bottom: 2px solid #eaeaea;
+  }
+  
+  .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li {
+    font-size: 18px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #ff6f00; /* Swiggy-like orange hover effect */
+  }
+  
+  /* Hamburger menu for mobile */
+  .menu-btn {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+  }
+  
+  .menu-icon {
+    width: 100%;
+    height: 3px;
+    background-color: #333;
+    transition: all 0.3s ease;
+  }
+  
+  .menu-btn.open .menu-icon {
+    background-color: #ff6f00; /* Change to orange when opened */
+  }
+  
+  /* Rotate the lines of the hamburger to create a cross icon */
+  .menu-btn.open .menu-icon::before {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  
+  .menu-btn.open .menu-icon::after {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  /* Mobile responsive styles */
+  @media (max-width: 768px) {
+    .menu-btn {
+      display: flex;
+    }
+  
+    .nav-links {
+      display: none;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background-color: #fff;
+      flex-direction: column;
+      gap: 10px;
+      border: 1px solid #eaeaea;
+      padding: 10px;
+      width: 200px;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  }
+  
