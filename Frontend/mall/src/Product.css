@@ -1,0 +1,521 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+  }
+  
+  .popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35rem;
+    height: 35rem;
+    background-color: white;
+    border: 1px solid black;
+    z-index: 9999;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .bt {
+    width: 4rem;
+    height: 2rem;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  .svgs {
+    cursor: pointer;
+  }
+  .svgheart {
+    cursor: pointer;
+  }
+  .productBtn {
+    height: 2rem;
+    width: 4rem;
+    background-color: #4e95ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .v3c5bo {
+    cursor: pointer;
+  }
+  
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 0rem;
+    height: 3rem;
+    padding: 0 9rem;
+    background: #2bc48a;
+    color: #ffffff;
+    position: sticky;
+    top: 0px;
+    left: 0;
+    z-index: 1; /* Ensure the navigation bar stays above other elements */
+    box-shadow: 0px 0px 10px 4px rgb(0 0 0 / 22%);
+  }
+  .h2 {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem;
+  }
+  
+  .leftSide {
+    width: 25vw;
+    height: 100vh; /* Set to full height of the viewport */
+    background-color: rgb(193, 44, 44);
+    overflow: hidden; /* Prevent left side from scrolling */
+    position: fixed;
+    top: 4rem; /* Adjust the top position as needed */
+  }
+  
+  .leftText h3 {
+    margin-top: 0rem;
+    padding: 2rem 0;
+  }
+  
+  .rightSide {
+    width: 70vw;
+    height: auto;
+    margin-left: 25vw; /* Adjust margin to match the width of the left side */
+    background-color: white;
+    overflow-y: auto; /* Allow right side to scroll vertically */
+  }
+  .rightSide ::-webkit-scrollbar {
+    width: 0; /* Width of the scrollbar */
+  }
+  
+  .rightSide ::-webkit-scrollbar-thumb {
+    background-color: none; /* Color of the thumb */
+  }
+  
+  .rightSide ::-webkit-scrollbar-track {
+    background-color: transparent; /* Color of the track */
+  }
+  
+  .main {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .photo {
+    height: 1.5rem;
+  }
+  .png {
+    height: 20rem;
+    width: 16rem;
+    cursor: pointer;
+  }
+  .cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .card {
+    height: 28rem;
+    width: 17rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+    margin: 0.5rem 1.7rem;
+    /* -webkit-flex-direction: column; */
+    box-sizing: border-box;
+    box-shadow: 1px solid gray;
+    background: #fafafa;
+    box-shadow: 5px 5px 10px #d9d8d8, -5px -5px 10px #ffffff;
+    border: 1px solid #d3d7e1;
+  }
+  .ps {
+    text-decoration: line-through;
+  
+    color: grey;
+  }
+  .cardText {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    width: 16rem;
+  }
+  .price {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0 0 0;
+  }
+  
+  .addBtn {
+    height: 2rem;
+    width: 90%;
+    background-color: #2bc48a;
+    color: #fff;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 1;
+    position: relative;
+    right: 0rem;
+    margin: 1rem 0;
+    cursor: pointer;
+  }
+  .addBtn h2 {
+    font-size: 1rem;
+  }
+  .rightSide h3 {
+    margin-top: 1rem;
+    padding: 2rem 0;
+  }
+  .searchHead {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0rem;
+    padding: 0rem 0;
+    align-items: center;
+  }
+  .search {
+    height: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+  .leftText h3 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding: 0rem 0;
+    align-items: center;
+  }
+  .leftText h3 {
+    margin-top: 0rem;
+    padding: 2rem 0;
+  }
+  .leftSide {
+    width: 25vw;
+    height: auto;
+    background-color: white;
+  }
+  .leftText {
+    display: flex;
+    justify-content: center;
+  }
+  /* .box{
+        height: 10rem;
+        width: 10rem;
+        background-color: aquamarine;
+      
+    } */
+  .prices {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    bottom: 1rem;
+  }
+  input {
+    padding: 1rem;
+  }
+  .inPrice {
+    height: 8.4rem;
+    width: 13rem;
+    border: 1px solid #2bc48a;
+  }
+  label {
+    padding: 2rem 0.5rem;
+  }
+  .input1 {
+    margin: 1rem 0.5rem 1rem 0.3rem;
+  }
+  .input2 {
+    margin: 1rem 0.5rem 1rem 0.3rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .range {
+    text-align: center;
+  }
+  .price-range {
+    text-align: center;
+    margin: 2rem 0 0 2rem;
+    margin-top: 2rem;
+  }
+  input {
+    padding: 1rem;
+    margin: 0rem 0 0 1rem;
+  }
+  .slider {
+    position: relative;
+    bottom: 1rem;
+  }
+  .left-head {
+    font-size: 0.9rem;
+  }
+  #gsearch {
+    height: 1rem;
+    width: 13rem;
+    position: relative;
+    right: 0.4rem;
+  }
+  .gsearch {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 1.2rem;
+  }
+  #gsearch {
+    border: 1px solid #2bc48a;
+    transition: border-color 0.3s ease;
+  }
+  #gsearch:focus {
+    border-color: #2bc48a;
+    outline: none;
+  }
+  
+  body::-webkit-scrollbar {
+    width: 0; /* For Chrome, Safari, and Opera */
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: transparent; /* For Chrome, Safari, and Opera */
+  }
+  
+  #priceRange {
+    cursor: pointer;
+  }
+  
+  /* Custom styling for the price range slider */
+  .slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 5px;
+    background: transparent;
+    outline: none;
+    margin: 0;
+  }
+  
+  .slider::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8px;
+    margin-top: 0.7rem;
+    outline: none;
+    background: #d3d7e1;
+    border-radius: 5px;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #4e95ff;
+  
+    border-radius: 50%;
+    margin-top: -5px;
+  }
+  
+  .slider::-moz-range-track {
+    width: 100%;
+    height: 5px;
+    background: transparent;
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border: 2px solid #000; /* Set your desired color or remove this line for no border */
+    border-radius: 50%;
+    margin-top: -5px;
+  }
+  
+  .slider::-ms-track {
+    width: 100%;
+    height: 5px;
+    background: transparent;
+    border-color: transparent;
+  }
+  
+  .slider::-ms-thumb {
+    width: 15px;
+    height: 15px;
+    background: transparent;
+    border: 2px solid #000; /* Set your desired color or remove this line for no border */
+    border-radius: 50%;
+    margin-top: 0;
+  }
+  
+  /* Optional: Style the range values */
+  .slider-value {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    color: #000; /* Set your desired color */
+  }
+  #gsearch:focus-within {
+    border: 1px solid #2bc48a;
+    border-bottom: 2px solid #2bc48a;
+  }
+  
+  .productBtns {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  .badge {
+    height: 18px;
+    width: 16px;
+    background: #4e95ff;
+    text-align: center;
+    position: relative;
+    bottom: 0.6rem;
+    right: 1rem;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Media query for screens smaller than 768px (typical tablets) */
+  /* Media query for screens smaller than 768px (typical tablets) */
+  @media only screen and (max-width: 768px) {
+    .navBar {
+      padding: 0 1rem;
+    }
+  
+    .main {
+      flex-direction: column;
+    }
+  
+    .leftSide {
+      width: 100%;
+      position: static;
+      margin-left: 0;
+    }
+  
+    .rightSide {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .card {
+      width: 48%; /* Two cards per row, allowing for some spacing */
+      margin: 0.5rem 0;
+    }
+    .cardContainer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 0 14px;
+    }
+  
+    /* Add more styles for smaller screens as needed */
+  }
+  
+  /* Media query for screens smaller than 480px (typical mobile phones) */
+  @media (min-width: 371px) and (max-width: 553px) {
+    .card {
+      width: 49%;
+      margin: 0.5rem 0;
+      height: 23rem;
+      padding: 0;
+    }
+    .photo {
+      height: 1.5rem;
+      font-size: 12.5px;
+    }
+    .png {
+      height: 12rem;
+      width: 12rem;
+      cursor: pointer;
+    }
+    .cardText {
+      width: 10rem;
+    }
+  
+    .cardContainer {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 5px;
+      gap: 4px;
+    }
+    .cardContainer {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .cardContainer {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 5px;
+    }
+    .png {
+      height: 10rem;
+      width: 10rem;
+      cursor: pointer;
+    }
+    .price {
+      display: flex;
+      gap: 1rem;
+      margin: 1.5rem 0 0 0;
+    }
+  
+    /* Adjust your styles for smaller screens */
+  }
+  /* Media query for screens smaller than 480px (typical mobile phones) */
+  @media only screen and (max-width: 370px) {
+    .navBar {
+      padding: 0 1rem;
+    }
+  
+    .main {
+      flex-direction: column;
+    }
+  
+    .leftSide {
+      width: 100%;
+      position: static;
+      margin-left: 0;
+    }
+  
+    .rightSide {
+      width: 100%;
+      margin-left: 0;
+    }
+  
+    .card {
+      width: 91%;
+      margin: 0.5rem 0;
+    }
+    .cardContainer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding: 0 14px;
+      justify-content: center;
+    }
+  
+    /* Add more styles for smaller screens as needed */
+  }
+  
